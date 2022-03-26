@@ -30,14 +30,14 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.4'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.6.4'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.4'
-    implementation 'org.springframework.cloud:spring-cloud-starter-config:3.1.1'
-    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:3.1.1'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.1'
-    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:3.1.1'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.10.RELEASE'
-    implementation 'org.postgresql:postgresql:42.3.3'
-    testImplementation 'junit:junit:4.13.2'
+    implementation "org.springframework.boot:spring-boot-starter-web:2.3.2.RELEASE"
+    implementation "org.springframework.boot:spring-boot-starter-actuator:2.3.2.RELEASE"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    implementation "org.springframework.cloud:spring-cloud-starter-config"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
+    implementation "org.springframework.cloud:spring-cloud-starter-sleuth"
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-hystrix"
+    implementation "org.postgresql:postgresql:42.2.5"
+    testImplementation "junit:junit:4.1"
 }
