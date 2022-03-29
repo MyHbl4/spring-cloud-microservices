@@ -34,10 +34,10 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-mail:2.3.2.RELEASE"
     implementation "org.springframework.boot:spring-boot-starter-web:2.3.2.RELEASE"
     implementation "org.springframework.boot:spring-boot-starter-amqp:2.3.2.RELEASE"
+    implementation "org.springframework.boot:spring-boot-starter-actuator:2.3.2.RELEASE"
     implementation "org.springframework.cloud:spring-cloud-starter-config"
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
     implementation "org.springframework.cloud:spring-cloud-starter-sleuth"
-    implementation "org.springframework.boot:spring-boot-starter-actuator:2.3.2.RELEASE"
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-hystrix"
     testImplementation "junit:junit:4.1"
 }

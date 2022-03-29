@@ -5,6 +5,7 @@ import com.javastart.bill.exception.BillNotFoundException;
 import com.javastart.bill.repository.BillRepository;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,5 +41,9 @@ public class BillService {
         Bill deletedBill = getBillById(billId);
         billRepository.deleteById(billId);
         return deletedBill;
+    }
+
+    public List<Bill> getBillsByAccountId(Long accountId) {
+        return billRepository.getBillsByAccountId(accountId);
     }
 }
