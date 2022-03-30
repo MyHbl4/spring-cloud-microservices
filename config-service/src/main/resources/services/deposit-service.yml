@@ -7,16 +7,19 @@ spring:
     properties:
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/dsposit_service_database
+    url: jdbc:postgresql://192.168.100.6:5432/dsposit_service_database
     username: postgres
     password: 1988
     driver-class-name: org.postgresql.Driver
 
   rabbitmq:
     port: 5672
-    host: localhost
+    host: 192.168.100.6
     username: guest
     password: guest
     listener:
       direct:
         default-requeue-rejected: true
+
+server:
+  port: 9999
