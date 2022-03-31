@@ -11,6 +11,7 @@ import com.javastart.deposit.rest.BillResponseDTO;
 import com.javastart.deposit.rest.BillServiceClient;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
+import java.util.List;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -66,6 +67,10 @@ public class DepositService {
             new Deposit(amount, defaultBill.getBillId(), OffsetDateTime.now(), account.getEmail()));
         return createResponse(amount, account);
 
+    }
+
+    public List<Deposit> getDepositsByEmail(String email) {
+        return depositRepository.findDepositsByEmail(email);
     }
 
     private DepositResponseDTO createResponse(BigDecimal amount,
